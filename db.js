@@ -40,7 +40,7 @@ const db = mysql.createPool({
         Ffq/HnTwwvNffCKHyvsOPc7cZEZ/MRNOOP4Xeo4khWo8I/nMpdNpsiwdq87A5LYn
         Coe5da+wpXXx6ZTlb7QsAt2/vYySEcR0pIXxxoNzQ6xpEMn21CNCZvNFAy3RVmtR
         QsKADT1abYBwZJTLc5lz+1nvxsb6c4QQ1nLiTMPPJHUYZapbjA==
-        -----END CERTIFICATE-----`
+        -----END CERTIFICATE-----`,
     port: 3306,
     waitForConnections: true,
     connectionLimit: 10,
