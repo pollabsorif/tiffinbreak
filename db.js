@@ -16,7 +16,8 @@ const db = mysql.createPool({
     user: 'avnadmin',
     database: 'khan',
     password: 'AVNS_lRYtTeB9J3_KpB-eTKu',
-    DB_CA_CERTIFICATE: `-----BEGIN CERTIFICATE-----
+    ssl: {
+        ca: `-----BEGIN CERTIFICATE-----
         MIIEQTCCAqmgAwIBAgIURTeD9EGw/x4q4QVgli3lbrpoqq4wDQYJKoZIhvcNAQEM
         BQAwOjE4MDYGA1UEAwwvZDMzZTBiN2UtNGFlYy00MjVjLTg1YjktYTY1YjNiNWIw
         YzViIFByb2plY3QgQ0EwHhcNMjQwNDI4MDYzODM1WhcNMzQwNDI2MDYzODM1WjA6
@@ -41,7 +42,9 @@ const db = mysql.createPool({
         Coe5da+wpXXx6ZTlb7QsAt2/vYySEcR0pIXxxoNzQ6xpEMn21CNCZvNFAy3RVmtR
         QsKADT1abYBwZJTLc5lz+1nvxsb6c4QQ1nLiTMPPJHUYZapbjA==
         -----END CERTIFICATE-----`,
-    port: 3306,
+        rejectUnauthorized: false
+    },
+    port: 13249,
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
